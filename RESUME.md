@@ -9,6 +9,17 @@ A link-only message pointing to this repository or this file means: read this ch
 
 This section supersedes older setup/publication status below.
 
+### IntelliJ context restoration
+
+- Fetched origin and verified live main and codex/iteration-1 at fd0eb7b19ff2804f9f863fe23a6cfe3c963aa1c3. The local checkout was already clean on codex/iteration-1 with origin/codex/iteration-1 as its upstream; no switch or reset was needed. Local main remains older; use the fetched origin/main when comparing.
+- Live PR checks confirm implementation PRs #1/#2 and planning PRs #6/#7/#8 are merged, with no open PRs in either repository at this check.
+- Read current implementation main README/RESUME and the authoritative planning main handoff, requirements, decisions 001–004, explorations 001–004, checkpoint and open questions. Planning origin/main was fetched and verified at 6505e63b02b3bf82ab377e48f8e5f392800918ae; its older local working branch was left untouched. This was context restoration, not a renewed historical audit.
+- No applicable AGENTS.md files were found during initial inspection. Subsequently added root AGENTS.md at the user's request, linking to existing records and recording lasting working instructions.
+- Environment reports OpenJDK/java/javac 27.0.1.0.3 and Gradle 9.8.2. Maven is not on PATH. Gradle's initial sandbox native-library failure did not recur outside the sandbox. No tools were installed or IntelliJ configuration changed.
+- Pending recommendation: use the installed JDK directly for a dependency-free CLI experiment, deferring a build tool and permanent Java baseline. A small explicit fixture convention (title heading plus authored recap section), title matching, and selected-note-only display are proposed experiment choices, not approved product formats or defaults.
+- No Java implementation or runnable tests exist; no behavior tests were run. Next: obtain the user's go-ahead for the concrete sample-only CLI increment, then explain and implement small steps, run the success/clarification/failure examples, and discuss scope limitations.
+- The user authorized committing and pushing the root AGENTS.md and restoration checkpoint together on codex/iteration-1. These documentation changes form this commit; verify its publication with git status and the remote branch tip when resuming. Documentation diff checks passed; no implementation was started and no unrelated local work was present. No new PR or merge is included in this step. Implementation approval remains pending.
+
 - The user cloned this repository in IntelliJ and committed/pushed the root .gitignore on codex/first-recap-slice. It excludes .idea/, *.iml and .DS_Store. The remote diff was reviewed: only those ignore rules were added before this checkpoint update.
 - Implementation PR #1 and planning PRs #6/#7 are merged. The user explicitly authorized creating and merging the setup/checkpoint PRs and creating a new working branch.
 - The next working branch is codex/iteration-1, to be created from updated main after the setup PR merges. Verify its existence and current state remotely; fetch and switch locally without discarding changes.
@@ -19,7 +30,7 @@ This section supersedes older setup/publication status below.
 ## Start here
 
 1. Read this file and README.md, check current branches/PRs and local changes/instructions.
-2. Read the [planning handoff](https://github.com/saharshpoddarorg/personal-digital-platform-planning/blob/codex/provisional-identity-tooling/RESUME.md) and its authoritative records. That repository is private; disclose access limitations rather than inventing its contents.
+2. Read the [planning handoff](https://github.com/saharshpoddarorg/personal-digital-platform-planning/blob/main/RESUME.md) and its authoritative records. That repository is private; disclose access limitations rather than inventing its contents.
 3. Briefly report what is implemented, what is only proposed, and the next small step. Do not restart the historical audit or require a finalized architecture.
 4. If implementation is still unstarted, ask for the still-needed authorization to begin the first increment; then inspect existing Java/tools and explain the minimum setup before a small change.
 
