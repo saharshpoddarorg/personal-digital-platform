@@ -1,9 +1,20 @@
 # Resume Personal Digital Platform
 
-Updated: 2026-10-31 (Asia/Kolkata).
+Updated: 2026-11-01 (Asia/Kolkata).
 Status: repository created; first runnable increment not yet implemented.
 
 A link-only message pointing to this repository or this file means: read this checkpoint and resume the small-step architecture and pair-programming discussion. Read live remote state and relevant open PRs before acting.
+
+## Latest checkpoint — 2026-11-01
+
+This section supersedes older setup/publication status below.
+
+- The user cloned this repository in IntelliJ and committed/pushed the root .gitignore on codex/first-recap-slice. It excludes .idea/, *.iml and .DS_Store. The remote diff was reviewed: only those ignore rules were added before this checkpoint update.
+- Implementation PR #1 and planning PRs #6/#7 are merged. The user explicitly authorized creating and merging the setup/checkpoint PRs and creating a new working branch.
+- The next working branch is codex/iteration-1, to be created from updated main after the setup PR merges. Verify its existence and current state remotely; fetch and switch locally without discarding changes.
+- No platform Java code or runnable tests exist from this work. Java version, build tool and implementation structure remain undecided. IDE-generated files are local and ignored; no automated platform scaffolding has occurred.
+- Next: read the planning records, inspect installed Java/build tools, explain the proposed first run, then agree the minimum setup and work through one small increment together. Do not treat branch/setup approval as authorization for a large autonomous implementation.
+- Update this checkpoint after meaningful outcomes and before breaks; keep detailed design rationale in the private planning repository. Future implementation commits/pushes/merges require their applicable user authorization.
 
 ## Start here
 
@@ -66,13 +77,12 @@ Publish authorized checkpoints through branches/PRs. An unmerged PR is not on ma
 
 A checkpoint preserves recorded outcomes and pointers, not every chat sentence or unsaved action. No automatic background saving is configured. When an abrupt interruption happens, inspect Git/local state and open PRs before trusting the last checkpoint.
 
-## Publication for this checkpoint
+## Publication and resume entry point
 
-This checkpoint is published on `codex/continuity-handoff` for review; do not assume it has merged. Check the repository's open/closed PRs for that branch.
+Use main RESUME.md after verifying live publication state:
+https://github.com/saharshpoddarorg/personal-digital-platform/blob/main/RESUME.md
 
-Reusable direct handoff while unmerged:
-https://github.com/saharshpoddarorg/personal-digital-platform/blob/codex/continuity-handoff/RESUME.md
+The setup/checkpoint PR uses codex/first-recap-slice. Check its merge status before treating this checkpoint as published on main. The user authorized its merge. The next implementation branch is codex/iteration-1.
 
 Planning remains authoritative for requirements, evidence and design history:
 https://github.com/saharshpoddarorg/personal-digital-platform-planning
-
